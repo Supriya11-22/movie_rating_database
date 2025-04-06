@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Movie Rating App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="search-block">
+            <a href="/">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Tmdb.new.logo.svg" alt="The Movie DB Logo" width="80">
+            </a>
+
+            <form id="search-form">
+                <input type="text" id="query" placeholder="Search movies..." autocomplete="off"/>
+                <button class="btn" type="submit">Search</button>
+                <div id="suggestions"></div> <!-- Suggestions will appear here -->
+            </form>            
+        </div>
+        <div class="row" id="root"></div>
+    </div>
+
+    <!-- Toast for Internet Connection Status -->
+    <div id="connection-status">
+        You are offline. Please check your internet connection.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
